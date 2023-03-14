@@ -4,9 +4,14 @@ This repository will soon contain the links to the dataset + additional resource
 
 Marco Cominelli, Francesco Gringoli, Francesco Restuccia, *Exposing the CSI: A Systematic Investigation of CSI-based Wi-Fi Sensing Capabilities and Limitations*
 
+## Dataset
+
+* [Scenario S1](https://doi.org/10.5281/zenodo.7732595)
+* Other scenarios coming soon.
+
 ---
 
-**Our complete dataset will be publicly available on Zenodo very soon. If you need the dataset right now, please contact: marco.cominelli@unibs.it**
+**We are loading our complete dataset on Zenodo and it will be available very soon. If you urgently need the dataset, please contact: marco.cominelli@unibs.it**
 
 ---
 
