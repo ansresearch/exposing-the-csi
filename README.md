@@ -6,12 +6,18 @@ Marco Cominelli, Francesco Gringoli, Francesco Restuccia, *Exposing the CSI: A S
 
 ## Dataset
 
+We split our dataset into multiple repositories hosted on Zenodo.
+Each repository contains the CSI data for a different scenario, from S1 to S7.
+
 * [Scenario S1](https://doi.org/10.5281/zenodo.7732595)
-* Other scenarios coming soon.
+* [Scenario S2](https://doi.org/10.5281/zenodo.7732781)
+* [Scenario S3](https://doi.org/10.5281/zenodo.7751893)
+* [Scenario S4](https://doi.org/10.5281/zenodo.7751897)
+* [Scenario S5](https://doi.org/10.5281/zenodo.7751907)
+* [Scenario S6](https://doi.org/10.5281/zenodo.7751909)
+* [Scenario S7](https://doi.org/10.5281/zenodo.7751915)
 
----
-
-**We are loading our complete dataset on Zenodo and it will be available very soon. If you urgently need the dataset, please contact: marco.cominelli@unibs.it**
+**The ground truth with 3D models will be available on GitHub very soon. If you need the data now, please contact: marco.cominelli@unibs.it**
 
 ---
 
@@ -27,4 +33,4 @@ The dataset contains CSI sequences collected in indoor environments while a targ
 
 ## References
 
-If you find these resources useful, please consider citing our paper on CSI-based activity recognition that will be presented at [PerCom 2023](https://www.percom.org/) (March 13-17,2023).
+If you find these resources useful, please consider citing our paper on CSI-based activity recognition presented at [PerCom 2023](https://www.percom.org/) (March 13-17,2023).
