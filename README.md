@@ -7,7 +7,7 @@ Marco Cominelli, Francesco Gringoli, Francesco Restuccia, *Exposing the CSI: A S
 ## Dataset
 
 We split our dataset into multiple repositories hosted on Zenodo.
-Each repository contains the CSI data for a different scenario, from S1 to S7.
+Each repository has size of approx 11 GB and contains the CSI data of a different scenario, from S1 to S7.
 
 * [Scenario S1](https://doi.org/10.5281/zenodo.7732595)
 * [Scenario S2](https://doi.org/10.5281/zenodo.7732781)
