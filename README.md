@@ -1,6 +1,6 @@
 # Exposing the CSI (dataset)
 
-This repository will soon contain the links to the dataset + additional resources (e.g., ground-truth videos) for the paper:
+This repository contains the links to the dataset + ground-truth videos for the paper:
 
 Marco Cominelli, Francesco Gringoli, Francesco Restuccia, *Exposing the CSI: A Systematic Investigation of CSI-based Wi-Fi Sensing Capabilities and Limitations*
 
