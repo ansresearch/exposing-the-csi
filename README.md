@@ -1,8 +1,18 @@
 # Exposing the CSI (dataset)
 
-This repository contains the links to the dataset + ground-truth videos for the paper:
+This repository contains the links to the dataset + ground-truth videos for our paper [Exposing the CSI: A systematic Investigation of CSI-based Wi-Fi Sensing Capabilities and Limitations](https://ieeexplore.ieee.org/document/10099368).
 
-Marco Cominelli, Francesco Gringoli, Francesco Restuccia, *Exposing the CSI: A Systematic Investigation of CSI-based Wi-Fi Sensing Capabilities and Limitations*
+## Main features
+
+The dataset contains CSI sequences collected in indoor environments while a target person performs different activities. The main features of the dataset are the following:
+
+* 12 target activities, 80 seconds for each activity
+* 7 different scenarios (3 people, 3 environments)
+* CSI collected using 160-MHz 802.11ax devices with 4 antennas
+* 3 Wi-Fi receivers collecting the same frames in different locations
+* anonymized video ground-truth with reference keypoints
+
+---
 
 ## Dataset
 
@@ -19,6 +29,16 @@ Each repository has size of approx 11 GB and contains the CSI data of a differen
 | [S6](https://doi.org/10.5281/zenodo.7751909) | A | Office | 2 |
 | [S7](https://doi.org/10.5281/zenodo.7751915) | A | Hall | 2 |
 
+## Activities
+
+This is the list of activities considered in every scenario:
+
+| | | | |
+|---|---|---|---|
+| A. Walk | D. Sitting | G. Wave hands | J. Wiping |
+| B. Run | E. Empty room | H. Clapping | K. Squat |
+| C. Jump | F. Standing | I. Lay down | L. Stretching |
+
 ---
 
 ## Videos
@@ -27,8 +47,8 @@ We recorded every experiment with a camera and used [VideoPose3D](https://github
 The keypoints files are in the `video_keypoints` directory in this repository.
 They do **not** contain personal information about the candidates, but can be used to re-create an anonymized video ground truth of the experiments showing how the candidates are moving.
 
-In the following, we report the instructions to generate the videos.
-Keypoints for static activities (like sitting or laying down) are not included in this repository because there is no movement to show.
+- > Note #1: Keypoints for static activities (like sitting or laying down) are not included in this repository because there is no movement to show.
+- > Note #2: Unfortunately, videos for activities A and B for the scenario S3 are missing due to a data pre-processing issue.
 
 ### Instructions to generate the videos
 
@@ -64,23 +84,13 @@ cp /path/to/exposing-the-csi/video_keypoints/* data/
 activity=S1_A; python run.py -d custom -k ${activity} -arc 3,3,3,3,3 -c checkpoint --evaluate pretrained_h36m_detectron_coco.bin --render --viz-subject ${activity}.mp4 --viz-action custom --viz-camera 0 --viz-video data/blank.mp4 --viz-output ${activity}.mp4 --viz-size 6
 ```
 
-List of activities:
-A = walk, B = run, C = jump, G = wave hands, H = clapping, J = wiping, K = squat.
-
----
-
-## Main features
-
-The dataset contains CSI sequences collected in indoor environments while a target person performs different activities. The main features of the dataset are the following:
-
-* 12 target activities, 80 seconds for each activity
-* 7 different scenarios (3 people, 3 environments)
-* CSI collected using 160-MHz 802.11ax devices with 4 antennas
-* 3 Wi-Fi receivers collecting the same frames in different locations
-* anonymized video ground-truth with reference keypoints
-
 ---
 
 ## References
 
-If you find these resources useful, please consider citing our paper on CSI-based activity recognition presented at [PerCom 2023](https://www.percom.org/) (March 13-17,2023).
+If you find these resources useful, please consider citing our paper:
+
+*M. Cominelli, F. Gringoli and F. Restuccia,
+"Exposing the CSI: A Systematic Investigation of CSI-based Wi-Fi Sensing Capabilities and Limitations,"
+2023 IEEE International Conference on Pervasive Computing and Communications (PerCom), Atlanta, GA, USA, 2023,
+pp. 81-90, doi: 10.1109/PERCOM56429.2023.10099368.*
