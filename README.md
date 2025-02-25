@@ -2,6 +2,8 @@
 
 This repository contains the links to the dataset + ground-truth videos for our paper [Exposing the CSI: A systematic Investigation of CSI-based Wi-Fi Sensing Capabilities and Limitations](https://ieeexplore.ieee.org/document/10099368).
 
+The code used to process the dataset is available [here](https://github.com/ansresearch/SHARP).
+
 ## Main features
 
 The dataset contains CSI sequences collected in indoor environments while a target person performs different activities. The main features of the dataset are the following:
